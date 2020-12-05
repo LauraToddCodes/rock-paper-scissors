@@ -82,7 +82,7 @@ function screenResponse(x) {
                 $("img.opponentsImg")
                 .delay(0)
                 .queue(function (next) {
-                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/rockOpp.png")
+                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/images/rockOpp.png")
                     .css({
                         "width":"100px",
                         "margin": "0 5px"
@@ -94,7 +94,7 @@ function screenResponse(x) {
                 $("img.opponentsImg")
                 .delay(0)
                 .queue(function (next) {
-                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/paperOpp.png")
+                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/images/paperOpp.png")
                     .css({
                         "width":"100px",
                         "margin": "0 5px"
@@ -106,7 +106,7 @@ function screenResponse(x) {
                 $("img.opponentsImg")
                 .delay(0)
                 .queue(function (next) {
-                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/scissorsOpp.png")
+                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/images/scissorsOpp.png")
                     .css({
                         "width": "100px",
                         "margin": "0 5px"
@@ -204,7 +204,7 @@ function screenResponse(x) {
                 topStreak.innerHTML = streak.innerHTML;
             }
             
-            $("img.opponentsImg").attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/question.png")
+            $("img.opponentsImg").attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/images/question.png")
 
             
             $("#result")
@@ -313,7 +313,7 @@ function screenResponse(x) {
                 $("img.opponentsImg")
                 .delay(0)
                 .queue(function (next) {
-                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/rockOpp.png")
+                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/images/rockOpp.png")
                     .css({
                         "width":"140px",
                         "margin": "0 10px"
@@ -325,7 +325,7 @@ function screenResponse(x) {
                 $("img.opponentsImg")
                 .delay(0)
                 .queue(function (next) {
-                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/paperOpp.png")
+                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/images/paperOpp.png")
                     .css({
                         "width":"140px",
                         "margin": "0 10px"
@@ -337,7 +337,7 @@ function screenResponse(x) {
                 $("img.opponentsImg")
                 .delay(0)
                 .queue(function (next) {
-                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/scissorsOpp.png")
+                    $(this).attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/images/scissorsOpp.png")
                     .css({
                         "width": "140px",
                         "margin": "0 10px"
@@ -435,7 +435,7 @@ function screenResponse(x) {
                 topStreak.innerHTML = streak.innerHTML;
             }
             
-            $("img.opponentsImg").attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/question.png")
+            $("img.opponentsImg").attr("src", "https://lauratoddcode.github.io/rock-paper-scissors/images/question.png")
 
             
             $("#result")
