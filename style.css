@@ -1,0 +1,260 @@
+﻿@font-face {
+	font-family: 'Work Sans', sans-serif;
+	src: url('WorkSans-Medium.ttf') format('truetype');
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Work Sans', sans-serif;
+}
+
+#pageTitle {
+	text-align: center;
+}
+
+.backBtn {
+	padding: 4px;
+	border-radius: 5px;
+	color: white;
+	background-color: #2B53B8;
+	text-decoration: none;
+	width: 190px;
+	height: 45px;
+	text-align: center;
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+	border: none;
+	font-size: 1.15em;
+	font-family: 'Work Sans', sans-serif;
+	margin: 20px 0 0 0;
+}
+
+/* ROCK PAPER SCISSORS - DESKTOP */
+#wrapper {
+	display: grid;
+	grid-template-columns: 30px 1fr 1fr 1fr 30px;
+	grid-template-rows: 70px 1fr 1fr 1fr 88px;
+	grid-gap: 10px;
+	height: 100%;
+}
+
+#mainGame {
+	z-index: 0;
+	display: grid;
+	grid-template-columns: 1em 1fr 1fr 1em;
+	grid-template-rows: auto;
+	background-color: #A8D9F8;
+	grid-column: 1 / 6;
+	grid-row: 3 / 4;
+	color: black;
+	border-radius: 1em;
+	margin: 0 20px;
+  }
+  
+  #rpstitle {
+	text-align: center;
+	grid-row: 1 / 2;
+	grid-column: 1 / 5;
+	margin-bottom: 0;
+  }
+  
+  .score {
+	text-align: right;
+	grid-row: 3 / 4;
+	grid-column: 1 / 5;
+	font-size: 1.25em;
+	margin: 0;
+  }
+  
+  .score span {
+	color: #0063B2FF;
+	margin: 0 20px;
+	width: 20px;
+  }
+  
+   
+  .optionImg {
+	cursor: pointer;
+  }
+  
+  .col1 {
+	grid-column: 2 / 3;
+	text-align: center;
+  }
+  
+  .col2 {
+	grid-column: 3 / 4;
+	text-align: center;
+  }
+
+  .colTitle {
+	margin-bottom: 5px;
+  }
+  
+  .options {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 2 / 3;
+	height: 180px;
+  }
+  
+  .optionImg {
+	width: 100px;
+	margin: 0 30px;
+  }
+  
+  .response {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	grid-column: 3 / 4;
+	height: 180px;
+  }
+  
+  .opponentsImg {
+	width: 100px;
+	margin: 20px 0;
+  }
+
+  
+  #instructions {
+	text-align: center;
+	grid-column: 1 / 5;
+	font-size: 1.25em;
+	margin: 30px 0;
+  }
+
+  
+  #rpsmodal {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 77777;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	position: fixed;  
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #A8D9F8;
+  }
+
+  #resultsCon {
+	text-align: center;
+  }
+
+  #commentary {
+	font-size: 2em;
+  }
+
+  #result {
+	font-size: 0.25em;
+  }
+
+  #resetBtn {
+	font-family:  'Work Sans', sans-serif;
+	font-size: 2em;
+	padding: 0.25em 0.75em;
+	background-color: #FEDE00;
+	cursor: pointer;
+	border-radius: 8px;
+	border: none;
+  }
+
+  #resetBtn:hover {
+	background-color: #0063B2FF;
+  }
+
+@media only screen and (min-width: 34em) and (max-width: 65em) {
+
+	/* ROCK PAPER SCISSORS - IPAD */
+
+	#wrapper {
+		grid-template-rows: 10px 1fr 1fr 1fr 6.5em;
+	}
+
+	.colTitle {
+		margin: 0 0 5px 0;
+	}
+
+	.col1 {
+		grid-column-end: 4;
+	}
+	
+	.col2 {
+		grid-column-start: 2;
+		grid-row: 6 / 7;
+	}
+	
+	.options {
+		grid-column-end: 4;
+	}
+	
+	.response {
+		grid-column-start: 2;
+	}
+
+   
+}
+
+@media screen and (max-width: 34em) {
+
+	.backBtn {
+		width: 165px;
+		height: 40px;
+		font-size: 1em;
+	}
+
+	/* ROCK PAPER SCISSORS - MOBILE */
+	#wrapper {
+		grid-template-rows: 10px 1fr 1fr 1fr 6.5em;
+	}
+
+	#mainGame {
+		grid-row: 2 / 3;
+	}
+
+	.score {
+		font-size: 1em;
+	}
+
+	.optionImg {
+		width: 80px;
+		margin: 0 15px;
+	}
+
+	.opponentsImg {
+		width: 80px;
+		margin: 0 15px;
+	}
+
+	.col1 {
+		grid-column-end: 4;
+	}
+	
+	.col2 {
+		grid-column-start: 2;
+		grid-row: 6 / 7;
+	}
+	
+	.options {
+		grid-column-end: 4;
+	}
+	
+	.response {
+		grid-column-start: 2;
+	}
+
+	#commentary {
+		font-size: 1.5em;
+	} 	
+
+}

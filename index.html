@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web Design & Web Development in Guildford, Surrey. Creating Wordpress, Wix, Squarespace Websites or coding websites from scratch." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@LauraToddDesign">
+    <meta name="twitter:creator" content="@LauraToddDesign">
+    <meta name="twitter:title" content="Play Rock / Paper / Scissors!">
+    <meta name="twitter:description" content="How long can you keep up your winning streak in Rock / Paper / Scissors?">
+    <meta name="twitter:image" content="http://www.lauratodddesign.com/twitterCards/rps.jpg">
+    <title>Laura Todd Web Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159648583-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159648583-1');
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+    </style>
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="mainGame">
+            <button class="backBtn">< Back to Main Site</button>
+            <h1 id="rpstitle">Rock / Paper / Scissors</h1>
+          
+            <h3 class="score">
+                <p>current winning streak <span id="currentStreak"></span></p>
+                <p>top winning streak<span id="topStreak"></span></p>
+            </h3>
+
+            <div class="col1">
+                <h2 class="colTitle">YOU</h2>        
+            </div>
+            <div class="col2">
+                <h2 class="colTitle">OPPONENT</h2>
+            </div>
+            
+            
+            <div id="rpsmodal">
+                <div id="resultsCon">
+                    <p id="commentary"></p>
+                    <p id="result"></p>
+                    <button id="resetBtn">Play again</button>
+                </div>
+            </div>
+        
+            <div class="options">
+            <img class="optionImg" src="http://www.lauratodddesign.com/codepen/rock.png" id="rock">
+            <img class="optionImg" src="http://www.lauratodddesign.com/codepen/paper.png" id="paper">
+            <img class="optionImg" src="http://www.lauratodddesign.com/codepen/scissors.png" id="scissors">
+            </div>
+        
+            <div class="response">
+            <img class="opponentsImg" src="http://www.lauratodddesign.com/codepen/question.png">
+            </div>
+
+            <h3 id="instructions">Select your option to play</h3>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="rockPaperScissors.js"></script>
+
+
+</body>
+</html>
